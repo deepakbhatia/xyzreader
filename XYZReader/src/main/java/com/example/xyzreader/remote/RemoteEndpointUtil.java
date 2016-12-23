@@ -1,7 +1,5 @@
 package com.example.xyzreader.remote;
 
-import android.util.Log;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONTokener;
@@ -14,7 +12,7 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 public class RemoteEndpointUtil {
-    private static final String TAG = "RemoteEndpointUtil";
+    private static final String TAG = RemoteEndpointUtil.class.getSimpleName();
 
     private RemoteEndpointUtil() {
     }
@@ -24,7 +22,7 @@ public class RemoteEndpointUtil {
         try {
             itemsJson = fetchPlainText(Config.BASE_URL);
         } catch (IOException e) {
-            Log.e(TAG, "Error fetching items JSON", e);
+            //Log.e(TAG, "Error fetching items JSON", e);
             return null;
         }
 
@@ -33,11 +31,11 @@ public class RemoteEndpointUtil {
             JSONTokener tokener = new JSONTokener(itemsJson);
             Object val = tokener.nextValue();
             if (!(val instanceof JSONArray)) {
-                throw new JSONException("Expected JSONArray");
+                //throw new JSONException("Expected JSONArray");
             }
             return (JSONArray) val;
         } catch (JSONException e) {
-            Log.e(TAG, "Error parsing items JSON", e);
+            //Log.e(TAG, get.getString(R.string.parse_error_json), e);
         }
 
         return null;

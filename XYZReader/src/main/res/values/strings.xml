@@ -9,5 +9,12 @@
 
     <string name="up">Up</string>
     <string name="app_logo">App Logo</string>
+    <string name="parse_error_json">Error parsing items JSON</string>
+    <string name="invalid_item_article">Invalid parsed item array</string>
+    <string name="error_updating_content">Error updating content.</string>
+    <string name="no_network_error">Not online, not refreshing.</string>
+    <string name="share_text"></string>
+    <string name="byline_text">%1$s by %2$s</string>
+
 
 </resources>

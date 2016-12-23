@@ -12,6 +12,7 @@ import android.os.RemoteException;
 import android.text.format.Time;
 import android.util.Log;
 
+import com.example.xyzreader.R;
 import com.example.xyzreader.remote.RemoteEndpointUtil;
 
 import org.json.JSONArray;
@@ -21,7 +22,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class UpdaterService extends IntentService {
-    private static final String TAG = "UpdaterService";
+    private static final String TAG = UpdaterService.class.getSimpleName();
 
     public static final String BROADCAST_ACTION_STATE_CHANGE
             = "com.example.xyzreader.intent.action.STATE_CHANGE";
@@ -39,7 +40,7 @@ public class UpdaterService extends IntentService {
         ConnectivityManager cm = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
         NetworkInfo ni = cm.getActiveNetworkInfo();
         if (ni == null || !ni.isConnected()) {
-            Log.w(TAG, "Not online, not refreshing.");
+            Log.w(TAG, getString(R.string.no_network_error));
             return;
         }
 
@@ -57,7 +58,7 @@ public class UpdaterService extends IntentService {
         try {
             JSONArray array = RemoteEndpointUtil.fetchJsonArray();
             if (array == null) {
-                throw new JSONException("Invalid parsed item array" );
+                throw new JSONException(getString(R.string.invalid_item_article) );
             }
 
             for (int i = 0; i < array.length(); i++) {
@@ -78,7 +79,7 @@ public class UpdaterService extends IntentService {
             getContentResolver().applyBatch(ItemsContract.CONTENT_AUTHORITY, cpo);
 
         } catch (JSONException | RemoteException | OperationApplicationException e) {
-            Log.e(TAG, "Error updating content.", e);
+            Log.e(TAG, getString(R.string.error_updating_content), e);
         }
 
         sendStickyBroadcast(
