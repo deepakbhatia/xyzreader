@@ -23,6 +23,17 @@ android {
         renderscriptTargetApi 25
         renderscriptSupportModeEnabled true
     }
+
+    buildTypes {
+
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFile "proguard-butterknife-7.pro"
+
+        }
+    }
+
 }
 
 dependencies {
@@ -37,4 +48,6 @@ dependencies {
     compile 'com.android.support:design:25.0.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.android.support:support-annotations:25.0.1'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.jakewharton:butterknife-compiler:8.4.0'
 }

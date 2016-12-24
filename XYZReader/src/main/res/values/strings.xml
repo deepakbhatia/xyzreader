@@ -15,6 +15,7 @@
     <string name="no_network_error">Not online, not refreshing.</string>
     <string name="share_text"></string>
     <string name="byline_text">%1$s by %2$s</string>
+    <string name="article_frag">article_frag</string>
 
 
 </resources>

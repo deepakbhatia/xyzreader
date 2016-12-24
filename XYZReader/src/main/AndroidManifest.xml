@@ -27,6 +27,8 @@
 
         <activity
             android:name=".ui.ArticleDetailActivity"
+            android:launchMode="singleTop"
+
             android:parentActivityName=".ui.ArticleListActivity"
             android:theme="@style/AppTheme">
             <intent-filter>
