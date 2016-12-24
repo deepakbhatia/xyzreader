@@ -34,7 +34,7 @@ public class ArticleListActivity extends AppCompatActivity implements ArticleLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_article_list);
+        setContentView(R.layout.activity_article_main);
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
