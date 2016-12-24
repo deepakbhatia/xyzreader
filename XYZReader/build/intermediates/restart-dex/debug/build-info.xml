@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="x86"
-    api-level="17"
+    api-level="22"
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="107986371291726"
+    timestamp="153908845516087"
     token="-4276025941715090712"
-    verifier="MANIFEST_FILE_CHANGE" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="2031" />
+        duration="3073" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="154" />
+        duration="1576" />
     <task
         name="verifier"
-        duration="3" />
+        duration="58" />
 
     <artifact
         location="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="107986371291726"
-        verifier="MANIFEST_FILE_CHANGE" >
+        timestamp="153908845516087"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
             type="MAIN" />

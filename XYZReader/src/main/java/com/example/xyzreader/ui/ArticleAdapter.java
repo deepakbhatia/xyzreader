@@ -4,7 +4,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.support.v7.widget.RecyclerView;
 import android.text.format.DateUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -82,7 +81,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHold
 
 
     interface AdapterOnClickHandler {
-        void onClick(long itemId);
+        void onClick(int position, long itemId);
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -111,7 +110,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHold
                 v.setActivated(true);*/
             ///previousSelected = v;
             //TODO
-            clickHandler.onClick(mCursor.getLong(ArticleLoader.Query._ID));
+            clickHandler.onClick(adapterPosition,mCursor.getLong(ArticleLoader.Query._ID));
 
         }
     }

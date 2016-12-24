@@ -27,9 +27,11 @@ import com.example.xyzreader.data.UpdaterService;
  */
 public class ArticleListActivity extends AppCompatActivity implements ArticleListFragment.ArticleSelection{
 
+    private static final String DETAILFRAGMENT_TAG = ArticleDetailFragment.class.getSimpleName();
     private Toolbar mToolbar;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private RecyclerView mRecyclerView;
+    private boolean mTwoPane;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,24 @@ public class ArticleListActivity extends AppCompatActivity implements ArticleLis
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
+        setSupportActionBar(mToolbar);
+        if (findViewById(R.id.fragment_article_detail_container) != null) {
+            // The detail container view will be present only in the large-screen layouts
+            // (res/layout-sw600dp). If this view is present, then the activity should be
+            // in two-pane mode.
+            mTwoPane = true;
+            // In two-pane mode, show the detail view in this activity by
+            // adding or replacing the detail fragment using a
+            // fragment transaction.
+            if (savedInstanceState == null) {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_article_detail_container, new ArticleDetailFragment(), DETAILFRAGMENT_TAG)
+                        .commit();
+            }
+        } else {
+            mTwoPane = false;
+            getSupportActionBar().setElevation(0f);
+        }
 
         /*final View toolbarContainerView = findViewById(R.id.toolbar_container);
 
@@ -94,9 +114,18 @@ public class ArticleListActivity extends AppCompatActivity implements ArticleLis
     @Override
     public void articleSelected(long articleSelectedId) {
 
+        if(mTwoPane){
 
-        startActivity(new Intent(Intent.ACTION_VIEW,
-                ItemsContract.Items.buildItemUri(articleSelectedId)));
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_article_detail_container, ArticleDetailFragment.newInstance(articleSelectedId), DETAILFRAGMENT_TAG)
+                    .commit();
+
+        }else{
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    ItemsContract.Items.buildItemUri(articleSelectedId)));
+        }
+
+
     }
 
     /* @Override

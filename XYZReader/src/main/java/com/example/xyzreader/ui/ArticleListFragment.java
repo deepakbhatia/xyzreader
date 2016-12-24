@@ -33,6 +33,7 @@ public class ArticleListFragment extends Fragment implements
         LoaderManager.LoaderCallbacks<Cursor>,
         ArticleAdapter.AdapterOnClickHandler {
 
+    private static boolean mTwoPane;
     @BindView(R.id.swipe_refresh_layout)
      SwipeRefreshLayout mSwipeRefreshLayout;
     @BindView(R.id.recycler_view)
@@ -41,6 +42,9 @@ public class ArticleListFragment extends Fragment implements
     public static Activity activity;
     private ArticleAdapter adapter;
     private boolean mIsRefreshing = false;
+    private int mPosition  = RecyclerView.NO_POSITION;
+
+
 
     private BroadcastReceiver mRefreshingReceiver = new BroadcastReceiver() {
         @Override
@@ -53,7 +57,7 @@ public class ArticleListFragment extends Fragment implements
     };
 
     @Override
-    public void onClick(long id) {
+    public void onClick(int position, long id) {
 
             ((ArticleSelection)getActivity()).articleSelected(id);
     }
@@ -99,7 +103,6 @@ public class ArticleListFragment extends Fragment implements
         }
 
         adapter = new ArticleAdapter(getActivity(),this);
-        mRecyclerView.setAdapter(adapter);
 
         activity = getActivity();
         return articleListView;
@@ -137,11 +140,53 @@ public class ArticleListFragment extends Fragment implements
     @Override
     public void onLoadFinished(android.support.v4.content.Loader<Cursor> loader, Cursor cursor) {
 
+        int count = cursor.getCount();
+
+
         adapter.setCursor(cursor);
+        mRecyclerView.setAdapter(adapter);
+
+        if (count > 0) {
+
+
+            //error.setVisibility(View.GONE);
+
+            if(mTwoPane){
+
+                final long selectedArticleId;
+
+                /*if(adapter.getItemCount() > 0){
+                    if (mPosition == RecyclerView.NO_POSITION) {
+                        mPosition = 0;
+                        selectedArticleId =  adapter.getItemId(mPosition);
+
+
+                    }else{
+
+                        selectedArticleId =  adapter.getItemId(mPosition);
+
+
+                    }
+                    mRecyclerView.post(new Runnable() {
+                        @Override
+                        public void run() {
+
+                            if(selectedArticleId!=-1)
+
+                                ((ArticleSelection) getActivity()).articleSelected(selectedArticleId);
+                        }
+
+                    });
+                }
+*/
+            }
+
+        }
         int columnCount = getResources().getInteger(R.integer.list_column_count);
         StaggeredGridLayoutManager sglm =
                 new StaggeredGridLayoutManager(columnCount, StaggeredGridLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(sglm);
+
     }
 
     @Override
@@ -242,6 +287,11 @@ public class ArticleListFragment extends Fragment implements
             }
         }
     }*/
+    
+    public static void setTwoPane(boolean twoPane){
+        
+        mTwoPane = twoPane;
+    }
 
 
 }

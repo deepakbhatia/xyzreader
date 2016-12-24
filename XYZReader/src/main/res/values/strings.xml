@@ -16,6 +16,7 @@
     <string name="share_text"></string>
     <string name="byline_text">%1$s by %2$s</string>
     <string name="article_frag">article_frag</string>
+    <string name="no_article_data_available">No Articles</string>
 
 
 </resources>
