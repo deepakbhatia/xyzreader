@@ -266,7 +266,7 @@ public class ArticleDetailFragment extends Fragment implements
         mCursor = cursor;
         if (mCursor != null && !mCursor.moveToFirst()) {
             error.setVisibility(View.VISIBLE);
-            Log.e(TAG, "Error reading item detail cursor");
+            Log.e(TAG, getString(R.string.error_reading_cursor_item));
             mCursor.close();
             mCursor = null;
         }

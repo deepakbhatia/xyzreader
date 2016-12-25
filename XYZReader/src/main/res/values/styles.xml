@@ -24,11 +24,13 @@
         <item name="android:textColorLink">@color/colorAccent</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:actionBarDivider">?attr/actionBarDivider</item>
+        <item name="toolbarStyle">@style/ToolbarStyle</item>
 
 
     </style>
 
     <style name="ToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:theme">@android:style/Theme.Light.NoTitleBar</item>
         <item name="android:background">@color/colorPrimary</item>
         <item name="android:popupTheme">@style/Theme.AppCompat.Light</item>
     </style>

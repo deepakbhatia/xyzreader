@@ -569,6 +569,7 @@
     <dimen name="detail_metabar_vert_padding">16dp</dimen>
     <dimen name="detail_photo_height">10dp</dimen>
     <dimen name="detail_title_text_size">32sp</dimen>
+    <dimen name="details_app_bar_overlap">16dp</dimen>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
     <dimen name="elementMargin">4dp</dimen>
@@ -670,6 +671,7 @@
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="byline_text">%1$s by %2$s</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="error_reading_cursor_item">Error reading item detail cursor</string>
     <string name="error_updating_content">Error updating content.</string>
     <string name="invalid_item_article">Invalid parsed item array</string>
     <string name="no_article_data_available">No Articles</string>
@@ -695,6 +697,7 @@
         <item name="android:textColorLink">@color/colorAccent</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:actionBarDivider">?attr/actionBarDivider</item>
+        <item name="toolbarStyle">@style/ToolbarStyle</item>
 
 
     </style>
@@ -2071,6 +2074,7 @@
 
     </style>
     <style name="ToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:theme">@android:style/Theme.Light.NoTitleBar</item>
         <item name="android:background">@color/colorPrimary</item>
         <item name="android:popupTheme">@style/Theme.AppCompat.Light</item>
     </style>

@@ -12,12 +12,12 @@
         "source": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_ic_search_api_material.xml"
     },
     {
-        "merged": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
-        "source": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/notification_bg.xml"
-    },
-    {
         "merged": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/photo_background_protection.xml",
         "source": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/drawable/photo_background_protection.xml"
+    },
+    {
+        "merged": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/notification_bg.xml"
     },
     {
         "merged": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
@@ -52,12 +52,12 @@
         "source": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
-        "source": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_textfield_search_material.xml"
-    },
-    {
         "merged": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
         "source": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_textfield_search_material.xml"
     },
     {
         "merged": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",

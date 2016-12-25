@@ -52,16 +52,16 @@ MERGED from [com.android.support:support-compat:25.0.1] /Users/obelix/Documents/
 		ADDED from /Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/AndroidManifest.xml:12:9-35
 	android:icon
 		ADDED from /Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/AndroidManifest.xml:13:9-43
+	android:theme
+		ADDED from /Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/AndroidManifest.xml:15:9-40
 activity#com.example.xyzreader.ui.ArticleListActivity
-ADDED from /Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/AndroidManifest.xml:17:9-26:20
-	android:label
-		ADDED from /Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/AndroidManifest.xml:19:13-45
+ADDED from /Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/AndroidManifest.xml:18:9-26:20
 	android:launchMode
 		ADDED from /Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/AndroidManifest.xml:20:13-43
 	android:theme
 		ADDED from /Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/AndroidManifest.xml:21:13-44
 	android:name
-		ADDED from /Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/AndroidManifest.xml:18:13-51
+		ADDED from /Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/AndroidManifest.xml:19:13-51
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from /Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/AndroidManifest.xml:22:13-25:29
 action#android.intent.action.MAIN

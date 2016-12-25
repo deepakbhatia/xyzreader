@@ -11,7 +11,14 @@
                     "endOffset": 119
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 68,
+                        "endOffset": 119
+                    }
                 }
             },
             {
@@ -23,7 +30,14 @@
                     "endOffset": 188
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 124,
+                        "endColumn": 68,
+                        "endOffset": 188
+                    }
                 }
             },
             {
@@ -35,7 +49,14 @@
                     "endOffset": 258
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 193,
+                        "endColumn": 69,
+                        "endOffset": 258
+                    }
                 }
             },
             {
@@ -47,7 +68,14 @@
                     "endOffset": 332
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 263,
+                        "endColumn": 73,
+                        "endOffset": 332
+                    }
                 }
             },
             {
@@ -59,7 +87,14 @@
                     "endOffset": 408
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 337,
+                        "endColumn": 75,
+                        "endOffset": 408
+                    }
                 }
             },
             {
@@ -71,7 +106,14 @@
                     "endOffset": 467
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 413,
+                        "endColumn": 58,
+                        "endOffset": 467
+                    }
                 }
             },
             {
@@ -83,7 +125,14 @@
                     "endOffset": 538
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 472,
+                        "endColumn": 70,
+                        "endOffset": 538
+                    }
                 }
             },
             {
@@ -95,7 +144,14 @@
                     "endOffset": 606
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 543,
+                        "endColumn": 67,
+                        "endOffset": 606
+                    }
                 }
             },
             {
@@ -107,7 +163,14 @@
                     "endOffset": 666
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 59,
+                        "endOffset": 110
+                    }
                 }
             },
             {
@@ -119,7 +182,14 @@
                     "endOffset": 736
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 115,
+                        "endColumn": 69,
+                        "endOffset": 180
+                    }
                 }
             },
             {
@@ -131,7 +201,14 @@
                     "endOffset": 807
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 185,
+                        "endColumn": 70,
+                        "endOffset": 251
+                    }
                 }
             },
             {
@@ -143,7 +220,14 @@
                     "endOffset": 879
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 256,
+                        "endColumn": 71,
+                        "endOffset": 323
+                    }
                 }
             },
             {
@@ -155,7 +239,14 @@
                     "endOffset": 937
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 328,
+                        "endColumn": 57,
+                        "endOffset": 381
+                    }
                 }
             },
             {
@@ -167,7 +258,14 @@
                     "endOffset": 995
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 386,
+                        "endColumn": 57,
+                        "endOffset": 439
+                    }
                 }
             },
             {
@@ -179,7 +277,14 @@
                     "endOffset": 1101
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 444,
+                        "endColumn": 105,
+                        "endOffset": 545
+                    }
                 }
             },
             {
@@ -191,7 +296,14 @@
                     "endOffset": 1165
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 550,
+                        "endColumn": 63,
+                        "endOffset": 609
+                    }
                 }
             },
             {
@@ -222,7 +334,14 @@
                     "endOffset": 1275
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 90,
+                        "endColumn": 52,
+                        "endOffset": 138
+                    }
                 }
             },
             {
@@ -230,8 +349,27 @@
                     "startLine": 20,
                     "startColumn": 4,
                     "startOffset": 1280,
+                    "endColumn": 52,
+                    "endOffset": 1328
+                },
+                "from": {
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 280,
+                        "endColumn": 52,
+                        "endOffset": 328
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1333,
                     "endColumn": 53,
-                    "endOffset": 1329
+                    "endOffset": 1382
                 },
                 "from": {
                     "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/values-sw600dp/macro_layout.xml",
@@ -246,35 +384,49 @@
             },
             {
                 "to": {
-                    "startLine": 21,
-                    "startColumn": 4,
-                    "startOffset": 1334,
-                    "endColumn": 56,
-                    "endOffset": 1386
-                },
-                "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/values-sw600dp/macro_layout.xml"
-                }
-            },
-            {
-                "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 1391,
-                    "endColumn": 65,
-                    "endOffset": 1452
+                    "startOffset": 1387,
+                    "endColumn": 56,
+                    "endOffset": 1439
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/values-sw600dp/macro_layout.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/values-sw600dp/macro_layout.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 142,
+                        "endColumn": 56,
+                        "endOffset": 194
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1457,
+                    "startOffset": 1444,
+                    "endColumn": 65,
+                    "endOffset": 1505
+                },
+                "from": {
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/values-sw600dp/macro_layout.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 258,
+                        "endColumn": 65,
+                        "endOffset": 319
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1510,
                     "endColumn": 58,
-                    "endOffset": 1511
+                    "endOffset": 1564
                 },
                 "from": {
                     "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/values-sw600dp/macro_layout.xml",
@@ -289,11 +441,11 @@
             },
             {
                 "to": {
-                    "startLine": 24,
+                    "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 1516,
+                    "startOffset": 1569,
                     "endColumn": 51,
-                    "endOffset": 1563
+                    "endOffset": 1616
                 },
                 "from": {
                     "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/values-sw600dp/macro_layout.xml",
@@ -308,63 +460,99 @@
             },
             {
                 "to": {
-                    "startLine": 25,
-                    "startColumn": 4,
-                    "startOffset": 1568,
-                    "endColumn": 53,
-                    "endOffset": 1617
-                },
-                "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml"
-                }
-            },
-            {
-                "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 1622,
-                    "endColumn": 41,
-                    "endOffset": 1659
+                    "startOffset": 1621,
+                    "endColumn": 53,
+                    "endOffset": 1670
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 36,
+                        "endColumn": 53,
+                        "endOffset": 85
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 1664,
-                    "endColumn": 94,
-                    "endOffset": 1754
+                    "startOffset": 1675,
+                    "endColumn": 41,
+                    "endOffset": 1712
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 238,
+                        "endColumn": 41,
+                        "endOffset": 275
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 1759,
-                    "endColumn": 62,
-                    "endOffset": 1817
+                    "startOffset": 1717,
+                    "endColumn": 94,
+                    "endOffset": 1807
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 143,
+                        "endColumn": 94,
+                        "endOffset": 233
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 1822,
-                    "endLine": 32,
-                    "endColumn": 12,
-                    "endOffset": 1999
+                    "startOffset": 1812,
+                    "endColumn": 62,
+                    "endOffset": 1870
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 614,
+                        "endColumn": 62,
+                        "endOffset": 672
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1875,
+                    "endLine": 33,
+                    "endColumn": 12,
+                    "endOffset": 2052
+                },
+                "from": {
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 677,
+                        "endLine": 14,
+                        "endColumn": 12,
+                        "endOffset": 854
+                    }
                 }
             }
         ]
