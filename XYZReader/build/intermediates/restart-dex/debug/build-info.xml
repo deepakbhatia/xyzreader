@@ -5,29 +5,59 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="153908845516087"
+    timestamp="7072237390751"
     token="-4276025941715090712"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="3073" />
+        duration="595" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="939" />
     <task
         name="instant-run-transform"
-        duration="1576" />
+        duration="151" />
     <task
         name="verifier"
-        duration="58" />
+        duration="5" />
 
     <artifact
-        location="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
-        type="MAIN" />
+        location="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="153908845516087"
+        timestamp="1671508875018"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="2700143785028"
+        verifier="R_CLASS_CHANGE" >
+        <artifact
+            location="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="5830188885724"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="178986784013020"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"

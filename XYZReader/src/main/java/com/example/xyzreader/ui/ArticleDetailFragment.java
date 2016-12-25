@@ -1,7 +1,6 @@
 package com.example.xyzreader.ui;
 
 import android.app.Activity;
-import android.support.v4.app.Fragment;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -11,6 +10,7 @@ import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.app.ShareCompat;
 import android.support.v4.content.Loader;
@@ -30,6 +30,10 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageLoader;
 import com.example.xyzreader.R;
 import com.example.xyzreader.data.ArticleLoader;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 /**
  * A fragment representing a single Article detail screen. This fragment is
@@ -57,8 +61,10 @@ public class ArticleDetailFragment extends Fragment implements
     private int mScrollY;
     private boolean mIsCard = false;
     private int mStatusBarFullOpacityBottom;
-
+    @BindView(R.id.fragment_article_detail_container_empty_view)
+    TextView error;
     private String shareText = null;
+    private Unbinder unbinder;
 
 
     /**
@@ -90,19 +96,24 @@ public class ArticleDetailFragment extends Fragment implements
         setHasOptionsMenu(true);
     }
 
-    public ArticleDetailActivity getActivityCast() {
-        return (ArticleDetailActivity) getActivity();
+    public Activity getActivityCast() {
+        return  getActivity();
     }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        //blurSet();
+
+        updateStatusBar();
         // In support library r8, calling initLoader for a fragment in a FragmentPagerAdapter in
         // the fragment's onCreate may cause the same LoaderManager to be dealt to multiple
         // fragments because their mIndex is -1 (haven't been added to the activity yet). Thus,
         // we do this in onActivityCreated.
         getLoaderManager().initLoader(0, null, this);
+
+
     }
 
     @Override
@@ -118,6 +129,8 @@ public class ArticleDetailFragment extends Fragment implements
             }
         });
 
+        unbinder = ButterKnife.bind(this, mRootView);
+
 
 
 
@@ -126,7 +139,7 @@ public class ArticleDetailFragment extends Fragment implements
             @Override
             public void onScrollChanged() {
                 mScrollY = mScrollView.getScrollY();
-                getActivityCast().onUpButtonFloorChanged(mItemId, ArticleDetailFragment.this);
+                //getActivityCast().onUpButtonFloorChanged(mItemId, ArticleDetailFragment.this);
                 mPhotoContainerView.setTranslationY((int) (mScrollY - mScrollY / PARALLAX_FACTOR));
                 updateStatusBar();
             }
@@ -148,9 +161,8 @@ public class ArticleDetailFragment extends Fragment implements
         });
 
         bindViews();
-        //blurSet();
 
-        updateStatusBar();
+
         return mRootView;
     }
 
@@ -194,7 +206,9 @@ public class ArticleDetailFragment extends Fragment implements
         TextView bodyView = (TextView) mRootView.findViewById(R.id.article_body);
         bodyView.setTypeface(Typeface.createFromAsset(getResources().getAssets(), "Rosario-Regular.ttf"));
 
-        if (mCursor != null) {
+        if (mCursor != null && getActivity()!=null && isAdded()) {
+            error.setVisibility(View.GONE);
+
             mRootView.setAlpha(0);
             mRootView.setVisibility(View.VISIBLE);
             mRootView.animate().alpha(1);
@@ -216,9 +230,9 @@ public class ArticleDetailFragment extends Fragment implements
                                 Palette p = Palette.generate(bitmap, 12);
                                 mMutedColor = p.getDarkMutedColor(0xFF333333);
                                 mPhotoView.setImageBitmap(imageContainer.getBitmap());
-                                mRootView.findViewById(R.id.meta_bar).setBackgroundColor(getResources().getColor(android.R.color.transparent));
+                                //mRootView.findViewById(R.id.meta_bar).setBackgroundColor(getActivity().getResources().getColor(android.R.color.transparent));
                                 //blurSet();
-                                updateStatusBar();
+                                //updateStatusBar();
                             }
                         }
 
@@ -251,6 +265,7 @@ public class ArticleDetailFragment extends Fragment implements
 
         mCursor = cursor;
         if (mCursor != null && !mCursor.moveToFirst()) {
+            error.setVisibility(View.VISIBLE);
             Log.e(TAG, "Error reading item detail cursor");
             mCursor.close();
             mCursor = null;
@@ -299,4 +314,12 @@ public class ArticleDetailFragment extends Fragment implements
             });
         }
     }
+
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        unbinder.unbind();
+    }
+
 }

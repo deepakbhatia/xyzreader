@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/draw_insets_frame_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
     <com.example.xyzreader.ui.ObservableScrollView
         android:id="@+id/scrollview"
@@ -76,10 +77,31 @@
                     android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier" />
 
             </com.example.xyzreader.ui.MaxWidthLinearLayout>
+
+            <TextView
+                android:id="@+id/fragment_article_detail_container_empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@id/cardviewAligner"
+                android:layout_alignStart="@id/cardviewAligner"
+
+                android:layout_alignRight="@id/cardviewAligner"
+                android:layout_alignEnd="@id/cardviewAligner"
+
+                android:layout_alignTop="@id/cardviewAligner"
+                android:layout_alignBottom="@id/cardviewAligner"
+                android:layout_marginRight="@dimen/articleListMargin"
+                android:layout_marginEnd="@dimen/articleListMargin"
+                android:layout_marginBottom="@dimen/articleListMargin"
+                android:gravity="center"
+                android:text="@string/no_article_data_available"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                />
         </RelativeLayout>
     </com.example.xyzreader.ui.ObservableScrollView>
 
-    <android.support.design.widget.FloatingActionButton android:id="@+id/share_fab"
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/share_fab"
         android:stateListAnimator="@anim/fab_state_list_anim"
         android:layout_gravity="bottom|end"
         android:layout_marginRight="@dimen/fab_margin"

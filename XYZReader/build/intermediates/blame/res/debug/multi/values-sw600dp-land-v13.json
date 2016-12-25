@@ -11,14 +11,7 @@
                     "endOffset": 94
                 },
                 "from": {
-                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/values-sw600dp-land/macro_layout.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 36,
-                        "endColumn": 43,
-                        "endOffset": 75
-                    }
+                    "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/values-sw600dp-land/macro_layout.xml"
                 }
             },
             {
@@ -26,8 +19,8 @@
                     "startLine": 3,
                     "startColumn": 4,
                     "startOffset": 99,
-                    "endColumn": 54,
-                    "endOffset": 149
+                    "endColumn": 53,
+                    "endOffset": 148
                 },
                 "from": {
                     "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/values-sw600dp-land/macro_layout.xml",
@@ -35,8 +28,8 @@
                         "startLine": 5,
                         "startColumn": 4,
                         "startOffset": 133,
-                        "endColumn": 54,
-                        "endOffset": 183
+                        "endColumn": 53,
+                        "endOffset": 182
                     }
                 }
             },
@@ -44,9 +37,9 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 154,
+                    "startOffset": 153,
                     "endColumn": 51,
-                    "endOffset": 201
+                    "endOffset": 200
                 },
                 "from": {
                     "file": "/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/src/main/res/values-sw600dp-land/macro_layout.xml",

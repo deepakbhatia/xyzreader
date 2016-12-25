@@ -11,8 +11,8 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.support.v7.widget.*;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,7 +42,8 @@ public class ArticleListFragment extends Fragment implements
     public static Activity activity;
     private ArticleAdapter adapter;
     private boolean mIsRefreshing = false;
-    private int mPosition  = RecyclerView.NO_POSITION;
+    private int mPosition ;
+    private static final String SELECTED_ITEM = "SELECTED_ITEM";
 
 
 
@@ -59,6 +60,7 @@ public class ArticleListFragment extends Fragment implements
     @Override
     public void onClick(int position, long id) {
 
+            mPosition  = position;
             ((ArticleSelection)getActivity()).articleSelected(id);
     }
 
@@ -73,14 +75,20 @@ public class ArticleListFragment extends Fragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRetainInstance(true);
+
     }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        if(savedInstanceState!=null && savedInstanceState.containsKey(SELECTED_ITEM)){
+            mPosition = savedInstanceState.getInt(SELECTED_ITEM,RecyclerView.NO_POSITION);
+        }
 
         getLoaderManager().initLoader(0, null, this);
+
 
     }
 
@@ -104,6 +112,9 @@ public class ArticleListFragment extends Fragment implements
 
         adapter = new ArticleAdapter(getActivity(),this);
 
+        mRecyclerView.addItemDecoration(new android.support.v7.widget.DividerItemDecoration(getActivity(),1));
+
+
         activity = getActivity();
         return articleListView;
     }
@@ -116,6 +127,9 @@ public class ArticleListFragment extends Fragment implements
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
+
+        outState.putInt(SELECTED_ITEM,mPosition);
+
     }
 
     @Override
@@ -155,7 +169,8 @@ public class ArticleListFragment extends Fragment implements
 
                 final long selectedArticleId;
 
-                /*if(adapter.getItemCount() > 0){
+                if(adapter.getItemCount() > 0){
+
                     if (mPosition == RecyclerView.NO_POSITION) {
                         mPosition = 0;
                         selectedArticleId =  adapter.getItemId(mPosition);
@@ -178,7 +193,7 @@ public class ArticleListFragment extends Fragment implements
 
                     });
                 }
-*/
+
             }
 
         }

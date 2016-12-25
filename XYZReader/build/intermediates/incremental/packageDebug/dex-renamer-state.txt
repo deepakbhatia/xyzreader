@@ -1,7 +1,7 @@
-#Sat Dec 24 14:43:41 CET 2016
-base.0=/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f367489c074b312bf8d98e159bd5552f140a05ea
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3fb95f47c889f3c1492d9dce7eff2c3c1b72d36e/classes.dex
-base.1=/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3fb95f47c889f3c1492d9dce7eff2c3c1b72d36e
-file.0=/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f367489c074b312bf8d98e159bd5552f140a05ea/classes.dex
+#Sun Dec 25 11:41:48 CET 2016
+base.0=/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3fb95f47c889f3c1492d9dce7eff2c3c1b72d36e
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f367489c074b312bf8d98e159bd5552f140a05ea/classes.dex
+base.1=/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f367489c074b312bf8d98e159bd5552f140a05ea
+file.0=/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3fb95f47c889f3c1492d9dce7eff2c3c1b72d36e/classes.dex

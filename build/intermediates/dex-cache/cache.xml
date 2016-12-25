@@ -79,7 +79,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="3bf93b8a8571344ba255913d36f178f52f164c8b">
+        sha1="6cfbbbec9837b74d42ef47a7855ca64310db45e1">
         <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3fb95f47c889f3c1492d9dce7eff2c3c1b72d36e/classes.dex" />
     </item>
     <item
@@ -223,7 +223,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="74955a90dc89eb920c1c652a5c5a96f71978dec7">
+        sha1="2f698411f6610e3ad56dca6a751ea3de380c39e0">
         <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f367489c074b312bf8d98e159bd5552f140a05ea/classes.dex" />
     </item>
     <item
@@ -297,6 +297,15 @@
         revision="25.0.0"
         sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
         <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_fefa3decddf0ed2bd952f0408e4d24237747e904/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4700f436ede140fb804204f806c9cc3f08e386f4">
+        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-gridlayout-v7-25.0.1_4c45760914a099a14ef278299a21a8ed400c83e9/classes.dex" />
     </item>
     <item
         is-multidex="true"

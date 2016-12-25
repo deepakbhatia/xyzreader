@@ -40,6 +40,8 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHold
         return mCursor.getLong(ArticleLoader.Query._ID);
     }
 
+
+
     @Override
     public ArticleAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(mContext).inflate(R.layout.list_item_article, parent, false);
@@ -103,15 +105,26 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHold
         public void onClick(View view) {
             int adapterPosition = getAdapterPosition();
             mCursor.moveToPosition(adapterPosition);
-/*                if(previousSelected!=null)
-                {
-                    previousSelected.setActivated(false);
-                }
-                v.setActivated(true);*/
-            ///previousSelected = v;
+
+
             //TODO
             clickHandler.onClick(adapterPosition,mCursor.getLong(ArticleLoader.Query._ID));
 
         }
     }
+    /*public void toggleSelection(int pos) {
+        if (mCursor.moveToPosition(pos)) {
+            selectedItems.delete(pos);
+        }
+        else {
+            selectedItems.put(pos, true);
+        }
+        notifyItemChanged(pos);
+    }
+
+    public void clearSelections() {
+        selectedItems.clear();
+        notifyDataSetChanged();
+    }*/
+
 }
