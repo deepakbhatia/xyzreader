@@ -42,6 +42,7 @@ public class ArticleDetailActivity extends AppCompatActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().getDecorView().setSystemUiVisibility(
                     View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN |
@@ -49,7 +50,6 @@ public class ArticleDetailActivity extends AppCompatActivity implements
         }
         setContentView(R.layout.activity_detail);
 
-        getSupportLoaderManager().initLoader(0,null,this);
         mPagerAdapter = new MyPagerAdapter(getSupportFragmentManager());
         mPager = (ViewPager) findViewById(R.id.pager);
         mPager.setAdapter(mPagerAdapter);
@@ -99,17 +99,69 @@ public class ArticleDetailActivity extends AppCompatActivity implements
             });
         }
 
-        if (savedInstanceState == null) {
+        if (savedInstanceState == null)
+        {
             if (getIntent() != null && getIntent().getData() != null) {
                 mStartId = ItemsContract.Items.getItemId(getIntent().getData());
 
+                Log.d("onCreateView",""+mStartId);
 
                 mSelectedItemId = mStartId;
+            }
+            else {
+                if(savedInstanceState.containsKey("mStartId")){
+                    mStartId = savedInstanceState.getLong("mStartId");
+
+                    mSelectedItemId = mStartId;
+
+                    Log.d("onCreateView:else",""+mStartId);
+
+                }
+
             }
         }
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
 
+        Log.d("onResume",""+mPager);
+        //mPager.setAdapter(mPagerAdapter);
+
+        getSupportLoaderManager().initLoader(0,null,this);
+
+
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        if(savedInstanceState.containsKey("mStartId")){
+            mStartId = savedInstanceState.getLong("mStartId");
+
+            Log.d("onSave:restore",""+mStartId);
+
+            if(mPagerAdapter!=null){
+                Log.d("onSave:restore:mPagerAdapter",""+mStartId);
+
+            }
+
+            mSelectedItemId = mStartId;
+        }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putLong("mStartId",mStartId);
+
+        Log.d("onSaveInstanceState",""+mStartId);
+
+    }
 
     public void onUpButtonFloorChanged(long itemId, ArticleDetailFragment fragment) {
         if (itemId == mSelectedItemId) {
@@ -133,7 +185,9 @@ public class ArticleDetailActivity extends AppCompatActivity implements
     @Override
     public void onLoadFinished(Loader<Cursor> cursorLoader, Cursor cursor) {
         mCursor = cursor;
-        mPager.setAdapter(mPagerAdapter);
+        Log.d("onLoadFinished",""+mCursor.getCount());
+
+        //mPager.setAdapter(mPagerAdapter);
         mPagerAdapter.notifyDataSetChanged();
 
         // Select the start ID
@@ -176,7 +230,14 @@ public class ArticleDetailActivity extends AppCompatActivity implements
         }
 
         @Override
+        public Object instantiateItem(ViewGroup container, int position) {
+            return super.instantiateItem(container, position);
+        }
+
+        @Override
         public Fragment getItem(int position) {
+            Log.d("ongetItem",""+position);
+
             mCursor.moveToPosition(position);
             return ArticleDetailFragment.newInstance(mCursor.getLong(ArticleLoader.Query._ID));
         }

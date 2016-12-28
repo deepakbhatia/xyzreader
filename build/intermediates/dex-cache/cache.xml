@@ -12,6 +12,150 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_5df931666e4ae13f2c46fea55084f0bdb03903ab/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/.gradle/caches/modules-2/files-2.1/com.google.auto.service/auto-service/1.0-rc2/51033a5b8fcf7039159e35b6878f106ccd5fb35f/auto-service-1.0-rc2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="51033a5b8fcf7039159e35b6878f106ccd5fb35f">
+        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/auto-service-1.0-rc2_ddf5c555fc9e54e42a74c38d737702e9737acf29/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_caff4fc73f21c8eb1a207a11037ea27c9871d86e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.0.1_2f3dc0536b0b21fc00b40dd7159743e7284014be/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.0.1_e68f6206f63408ea5e48ac922af08d1255b562b5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_c09bf7a00171884d3bc49fd8cf29a76d3a588c34/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
+        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.jakewharton-butterknife-8.4.0_6c9a9200fe23ad6cdfd3fe980f5ffbb902ef445c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0b494b0d6bb229bb996c1dceb83bca360adeeceb">
+        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3fb95f47c889f3c1492d9dce7eff2c3c1b72d36e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_96ac7270dc0e399806fe06930b98abb34eba3c84/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_d659db130b4beba405a01dd6c349b13884087e87/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v13/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67355078cd30daae43f62ba47a4663ee6edb976e">
+        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_ac88b8e40746308b41fc70f3266273963f3ba93c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/android-sdk-macosx/build-tools/25.0.0/renderscript/lib/renderscript-v8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="05668b8cd6c7b07f152b6a5b4c6cff620817ba0f">
+        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/renderscript-v8_8f91fa7ab351815595eac534ec99da20187533f8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_25b10abe7db8040bd3b39d0527198452c4e9e4c5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_8111b0e633b202f78b778c11dba58d82e2a3e4f5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_d4027909d26725aa3a92cf29dc14c136ada6e3c2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v13/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6ac094121e75b4b87432beb9305d70c68ec6dcab">
+        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v13-25.0.0_f2e22a23cc22a0ea78081c2a0dfb3049d03e7d54/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/obelix/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.1.2/7052283359001bb108753cb0583a887d3bf94c82/okhttp-3.1.2.jar"
         jumboMode="true"
         optimize="true"
@@ -27,15 +171,6 @@
         revision="25.0.0"
         sha1="672cceae26e9a8fcbd8e0eefe5fc351c50d2488a">
         <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-25.0.0_2c1d9bd8e4ae417908763f13b37c3ed52bf3223e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_5df931666e4ae13f2c46fea55084f0bdb03903ab/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -75,15 +210,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/obelix/.gradle/caches/modules-2/files-2.1/com.google.auto.service/auto-service/1.0-rc2/51033a5b8fcf7039159e35b6878f106ccd5fb35f/auto-service-1.0-rc2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="51033a5b8fcf7039159e35b6878f106ccd5fb35f">
-        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/auto-service-1.0-rc2_ddf5c555fc9e54e42a74c38d737702e9737acf29/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
@@ -93,48 +219,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
-        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_caff4fc73f21c8eb1a207a11037ea27c9871d86e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
-        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.0.1_2f3dc0536b0b21fc00b40dd7159743e7284014be/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="2f698411f6610e3ad56dca6a751ea3de380c39e0">
+        sha1="43064092e8a99cf4893f273ede80edb75afdf0cc">
         <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f367489c074b312bf8d98e159bd5552f140a05ea/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
-        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.0.1_e68f6206f63408ea5e48ac922af08d1255b562b5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/obelix/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_c09bf7a00171884d3bc49fd8cf29a76d3a588c34/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -183,33 +273,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
-        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.jakewharton-butterknife-8.4.0_6c9a9200fe23ad6cdfd3fe980f5ffbb902ef445c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="516448a62445163bc3becad66066f2f799d91975">
-        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3fb95f47c889f3c1492d9dce7eff2c3c1b72d36e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_96ac7270dc0e399806fe06930b98abb34eba3c84/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -228,30 +291,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_d659db130b4beba405a01dd6c349b13884087e87/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/obelix/Documents/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
         <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_fefa3decddf0ed2bd952f0408e4d24237747e904/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v13/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="67355078cd30daae43f62ba47a4663ee6edb976e">
-        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_ac88b8e40746308b41fc70f3266273963f3ba93c/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -264,39 +309,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/obelix/Documents/android-sdk-macosx/build-tools/25.0.0/renderscript/lib/renderscript-v8.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="05668b8cd6c7b07f152b6a5b4c6cff620817ba0f">
-        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/renderscript-v8_8f91fa7ab351815595eac534ec99da20187533f8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/obelix/.gradle/caches/modules-2/files-2.1/com.google.auto/auto-common/0.6/cf7212b0f8bfef12657b942df8f4f2cf032d3f41/auto-common-0.6.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="cf7212b0f8bfef12657b942df8f4f2cf032d3f41">
         <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/auto-common-0.6_be947e0c5d71b70996f6620222aa127a811f1749/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
-        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_25b10abe7db8040bd3b39d0527198452c4e9e4c5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
-        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_8111b0e633b202f78b778c11dba58d82e2a3e4f5/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -309,30 +327,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
-        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_d4027909d26725aa3a92cf29dc14c136ada6e3c2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/obelix/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-compiler/8.4.0/22f40cd3f01849c6deeab0a755d2082b2624581/butterknife-compiler-8.4.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="022f40cd3f01849c6deeab0a755d2082b2624581">
         <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-compiler-8.4.0_e57d2653748bd84938b433c9b7bf580f4104926f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v13/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6ac094121e75b4b87432beb9305d70c68ec6dcab">
-        <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v13-25.0.0_f2e22a23cc22a0ea78081c2a0dfb3049d03e7d54/classes.dex" />
     </item>
 
 </items>

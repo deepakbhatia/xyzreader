@@ -206,6 +206,7 @@ public class ArticleListFragment extends Fragment implements
 
     @Override
     public void onLoaderReset(android.support.v4.content.Loader<Cursor> loader) {
+        if(mRecyclerView!=null)
         mRecyclerView.setAdapter(null);
     }
 

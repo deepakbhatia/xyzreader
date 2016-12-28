@@ -133,7 +133,6 @@ public class ArticleDetailFragment extends Fragment implements
 
 
 
-
         mScrollView = (ObservableScrollView) mRootView.findViewById(R.id.scrollview);
         mScrollView.setCallbacks(new ObservableScrollView.Callbacks() {
             @Override
@@ -160,11 +159,13 @@ public class ArticleDetailFragment extends Fragment implements
             }
         });
 
+        Log.d("onCreateView","bindViews");
         bindViews();
 
 
         return mRootView;
     }
+
 
     private void updateStatusBar() {
         int color = 0;
@@ -214,6 +215,7 @@ public class ArticleDetailFragment extends Fragment implements
             mRootView.animate().alpha(1);
             titleView.setText(mCursor.getString(ArticleLoader.Query.TITLE));
             shareText = mCursor.getString(ArticleLoader.Query.TITLE);
+            Log.d("onbindViews",""+shareText);
 
             String byLineText = String.format(getString(R.string.byline_text),DateUtils.getRelativeTimeSpanString(
                     mCursor.getLong(ArticleLoader.Query.PUBLISHED_DATE),
@@ -241,12 +243,12 @@ public class ArticleDetailFragment extends Fragment implements
 
                         }
                     });
-        } else {
+        } /*else {
             mRootView.setVisibility(View.GONE);
             titleView.setText("N/A");
             bylineView.setText("N/A" );
             bodyView.setText("N/A");
-        }
+        }*/
     }
 
     @Override

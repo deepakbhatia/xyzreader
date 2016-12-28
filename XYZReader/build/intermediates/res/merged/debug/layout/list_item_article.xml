@@ -5,13 +5,14 @@
     android:layout_margin="@dimen/elementMargin"
     android:clickable="true"
     android:focusable="true"
-    android:background="@drawable/touch_selector"
     >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/touch_selector"
+        >
 
         <!--suppress AndroidLintContentDescription -->
         <com.example.xyzreader.ui.DynamicHeightNetworkImageView

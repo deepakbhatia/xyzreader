@@ -96,6 +96,7 @@
                 android:layout_marginEnd="@dimen/articleListMargin"
                 android:layout_marginBottom="@dimen/articleListMargin"
                 android:gravity="center"
+                android:visibility="gone"
                 android:text="@string/no_article_data_available"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 />
@@ -111,6 +112,7 @@
         app:fabSize="normal"
         android:src="@drawable/ic_share"
         app:elevation="@dimen/fab_elevation"
+        app:rippleColor="@color/cardview_dark_background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/action_share" />
