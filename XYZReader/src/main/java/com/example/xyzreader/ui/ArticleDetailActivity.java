@@ -103,19 +103,15 @@ public class ArticleDetailActivity extends AppCompatActivity implements
         {
             if (getIntent() != null && getIntent().getData() != null) {
                 mStartId = ItemsContract.Items.getItemId(getIntent().getData());
-
-                Log.d("onCreateView",""+mStartId);
-
+                
                 mSelectedItemId = mStartId;
             }
             else {
-                if(savedInstanceState.containsKey("mStartId")){
-                    mStartId = savedInstanceState.getLong("mStartId");
+                if(savedInstanceState.containsKey(getResources().getString(R.string.currentSelection))){
+                    mStartId = savedInstanceState.getLong(getResources().getString(R.string.currentSelection));
 
                     mSelectedItemId = mStartId;
-
-                    Log.d("onCreateView:else",""+mStartId);
-
+                    
                 }
 
             }
@@ -125,8 +121,6 @@ public class ArticleDetailActivity extends AppCompatActivity implements
     @Override
     protected void onResume() {
         super.onResume();
-
-        Log.d("onResume",""+mPager);
         //mPager.setAdapter(mPagerAdapter);
 
         getSupportLoaderManager().initLoader(0,null,this);
@@ -139,13 +133,12 @@ public class ArticleDetailActivity extends AppCompatActivity implements
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
 
-        if(savedInstanceState.containsKey("mStartId")){
-            mStartId = savedInstanceState.getLong("mStartId");
 
-            Log.d("onSave:restore",""+mStartId);
-
+        if(savedInstanceState.containsKey(getResources().getString(R.string.currentSelection))){
+            mStartId = savedInstanceState.getLong(getResources().getString(R.string.currentSelection));
+            
             if(mPagerAdapter!=null){
-                Log.d("onSave:restore:mPagerAdapter",""+mStartId);
+
 
             }
 
@@ -157,10 +150,8 @@ public class ArticleDetailActivity extends AppCompatActivity implements
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
 
-        outState.putLong("mStartId",mStartId);
-
-        Log.d("onSaveInstanceState",""+mStartId);
-
+        outState.putLong(getResources().getString(R.string.currentSelection),mStartId);
+        
     }
 
     public void onUpButtonFloorChanged(long itemId, ArticleDetailFragment fragment) {
@@ -185,7 +176,6 @@ public class ArticleDetailActivity extends AppCompatActivity implements
     @Override
     public void onLoadFinished(Loader<Cursor> cursorLoader, Cursor cursor) {
         mCursor = cursor;
-        Log.d("onLoadFinished",""+mCursor.getCount());
 
         //mPager.setAdapter(mPagerAdapter);
         mPagerAdapter.notifyDataSetChanged();
@@ -236,7 +226,6 @@ public class ArticleDetailActivity extends AppCompatActivity implements
 
         @Override
         public Fragment getItem(int position) {
-            Log.d("ongetItem",""+position);
 
             mCursor.moveToPosition(position);
             return ArticleDetailFragment.newInstance(mCursor.getLong(ArticleLoader.Query._ID));

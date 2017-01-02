@@ -54,16 +54,6 @@ public class ArticleListActivity extends AppCompatActivity implements ArticleLis
             getSupportActionBar().setElevation(0f);
         }
 
-        /*final View toolbarContainerView = findViewById(R.id.toolbar_container);
-
-        mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
-
-        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        getLoaderManager().initLoader(0, null, this);
-
-        if (savedInstanceState == null) {
-            refresh();
-        }*/
 
         ArticleListFragment articleListFragment = (ArticleListFragment) getSupportFragmentManager().findFragmentByTag(getString(R.string.article_frag));
         if(articleListFragment == null){

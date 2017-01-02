@@ -18,6 +18,7 @@
     <string name="article_frag">article_frag</string>
     <string name="no_article_data_available">No Articles</string>
     <string name="error_reading_cursor_item">Error reading item detail cursor</string>
+    <string name="currentSelection">mStartId</string>
 
 
 </resources>

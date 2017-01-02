@@ -42,7 +42,7 @@ public class ArticleListFragment extends Fragment implements
     public static Activity activity;
     private ArticleAdapter adapter;
     private boolean mIsRefreshing = false;
-    private int mPosition ;
+    private int mPosition, mSelectedItemPosition ;
     private static final String SELECTED_ITEM = "SELECTED_ITEM";
 
 
@@ -56,11 +56,12 @@ public class ArticleListFragment extends Fragment implements
             }
         }
     };
+    private String SCROLLED_ITEM;
 
     @Override
     public void onClick(int position, long id) {
 
-            mPosition  = position;
+        mSelectedItemPosition  = position;
             ((ArticleSelection)getActivity()).articleSelected(id);
     }
 
@@ -84,7 +85,7 @@ public class ArticleListFragment extends Fragment implements
         super.onActivityCreated(savedInstanceState);
 
         if(savedInstanceState!=null && savedInstanceState.containsKey(SELECTED_ITEM)){
-            mPosition = savedInstanceState.getInt(SELECTED_ITEM,RecyclerView.NO_POSITION);
+            mSelectedItemPosition = savedInstanceState.getInt(SELECTED_ITEM,RecyclerView.NO_POSITION);
         }
 
         getLoaderManager().initLoader(0, null, this);
@@ -97,6 +98,8 @@ public class ArticleListFragment extends Fragment implements
         super.onDestroyView();
         unbinder.unbind();
     }
+    RecyclerViewPositionHelper mRecyclerViewHelper;
+
 
 
     @Nullable
@@ -115,6 +118,21 @@ public class ArticleListFragment extends Fragment implements
         mRecyclerView.addItemDecoration(new android.support.v7.widget.DividerItemDecoration(getActivity(),1));
 
 
+        mRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                super.onScrolled(recyclerView, dx, dy);
+
+                mRecyclerViewHelper = RecyclerViewPositionHelper.createHelper(recyclerView);
+
+                int firstVisibleItem = mRecyclerViewHelper.findFirstVisibleItemPosition();
+
+                mPosition = mRecyclerViewHelper.findLastVisibleItemPosition();
+
+
+            }
+        });
+
         activity = getActivity();
         return articleListView;
     }
@@ -128,7 +146,10 @@ public class ArticleListFragment extends Fragment implements
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
 
-        outState.putInt(SELECTED_ITEM,mPosition);
+        outState.putInt(SELECTED_ITEM,mSelectedItemPosition);
+
+        outState.putInt(SCROLLED_ITEM,mPosition);
+
 
     }
 
@@ -196,11 +217,18 @@ public class ArticleListFragment extends Fragment implements
 
             }
 
+
+
         }
         int columnCount = getResources().getInteger(R.integer.list_column_count);
         StaggeredGridLayoutManager sglm =
                 new StaggeredGridLayoutManager(columnCount, StaggeredGridLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(sglm);
+        if (mPosition == RecyclerView.NO_POSITION)
+            mPosition = 0;
+        mRecyclerView.smoothScrollToPosition(mPosition);
+
+
 
     }
 

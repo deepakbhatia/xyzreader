@@ -3215,17 +3215,18 @@ containing a value of this type.
         public static final int bottom_sheet_behavior=0x7f060028;
         public static final int byline_text=0x7f060029;
         public static final int character_counter_pattern=0x7f06002a;
-        public static final int error_reading_cursor_item=0x7f06002b;
-        public static final int error_updating_content=0x7f06002c;
-        public static final int invalid_item_article=0x7f06002d;
-        public static final int no_article_data_available=0x7f06002e;
-        public static final int no_network_error=0x7f06002f;
-        public static final int parse_error_json=0x7f060030;
+        public static final int currentSelection=0x7f06002b;
+        public static final int error_reading_cursor_item=0x7f06002c;
+        public static final int error_updating_content=0x7f06002d;
+        public static final int invalid_item_article=0x7f06002e;
+        public static final int no_article_data_available=0x7f06002f;
+        public static final int no_network_error=0x7f060030;
+        public static final int parse_error_json=0x7f060031;
         public static final int search_menu_title=0x7f060013;
-        public static final int share_text=0x7f060031;
+        public static final int share_text=0x7f060032;
         public static final int status_bar_notification_info_overflow=0x7f060014;
-        public static final int up=0x7f060032;
-        public static final int welcome_xyz_reader=0x7f060033;
+        public static final int up=0x7f060033;
+        public static final int welcome_xyz_reader=0x7f060034;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f08009b;
