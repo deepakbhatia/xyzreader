@@ -18,6 +18,8 @@
     <dimen name="list_icon">4dp</dimen>
     <dimen name="detail_card_elevation">2dp</dimen>
     <dimen name="details_app_bar_overlap">16dp</dimen>
+    <dimen name="image_dimension">200dp</dimen>
+
 
 
 </resources>

@@ -35,6 +35,7 @@
             android:textSize="@dimen/byLineTextSize"
             android:maxLines="2"
             android:ellipsize="end"
+            android:gravity="center"
             tool:text="Test the Title"/>
     </LinearLayout>
 

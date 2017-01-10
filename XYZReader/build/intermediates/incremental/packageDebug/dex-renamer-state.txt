@@ -1,4 +1,4 @@
-#Tue Jan 10 14:16:09 CET 2017
+#Tue Jan 10 15:34:35 CET 2017
 base.0=/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f367489c074b312bf8d98e159bd5552f140a05ea
 renamed.1=classes.dex
 renamed.0=classes2.dex

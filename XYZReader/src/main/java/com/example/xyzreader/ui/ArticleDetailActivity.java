@@ -11,10 +11,10 @@ import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowInsets;
 
 import com.example.xyzreader.R;
 import com.example.xyzreader.data.ArticleLoader;
@@ -49,6 +49,16 @@ public class ArticleDetailActivity extends AppCompatActivity implements
         }
         setContentView(R.layout.activity_detail);
 
+        Toolbar toolbar = (Toolbar)findViewById(R.id.detail_toolbar);
+
+        setSupportActionBar(toolbar);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_arrow_back);
+
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+
         mPagerAdapter = new MyPagerAdapter(getSupportFragmentManager());
         mPager = (ViewPager) findViewById(R.id.pager);
         mPager.setAdapter(mPagerAdapter);
@@ -60,9 +70,7 @@ public class ArticleDetailActivity extends AppCompatActivity implements
             @Override
             public void onPageScrollStateChanged(int state) {
                 super.onPageScrollStateChanged(state);
-                mUpButton.animate()
-                        .alpha((state == ViewPager.SCROLL_STATE_IDLE) ? 1f : 0f)
-                        .setDuration(300);
+
             }
 
             @Override
@@ -71,34 +79,11 @@ public class ArticleDetailActivity extends AppCompatActivity implements
                     mCursor.moveToPosition(position);
                 }
                 mSelectedItemId = mCursor.getLong(ArticleLoader.Query._ID);
-                updateUpButtonPosition();
+                //updateUpButtonPosition();
             }
         });
 
-        mUpButtonContainer = findViewById(R.id.up_container);
 
-        mUpButton = findViewById(R.id.action_up);
-        mUpButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onSupportNavigateUp();
-            }
-        });
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            mUpButtonContainer.setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() {
-                @Override
-                public WindowInsets onApplyWindowInsets(View view, WindowInsets windowInsets) {
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                        view.onApplyWindowInsets(windowInsets);
-                        mTopInset = windowInsets.getSystemWindowInsetTop();
-                    }
-                    mUpButtonContainer.setTranslationY(mTopInset);
-                    updateUpButtonPosition();
-                    return windowInsets;
-                }
-            });
-        }
 
         if (savedInstanceState == null)
         {
@@ -122,8 +107,6 @@ public class ArticleDetailActivity extends AppCompatActivity implements
     @Override
     protected void onResume() {
         super.onResume();
-        //mPager.setAdapter(mPagerAdapter);
-
         getSupportLoaderManager().initLoader(0,null,this);
 
 
@@ -155,18 +138,6 @@ public class ArticleDetailActivity extends AppCompatActivity implements
         
     }
 
-    public void onUpButtonFloorChanged(long itemId, ArticleDetailFragment fragment) {
-        if (itemId == mSelectedItemId) {
-            mSelectedItemUpButtonFloor = fragment.getUpButtonFloor();
-            updateUpButtonPosition();
-        }
-    }
-
-    private void updateUpButtonPosition() {
-        int upButtonNormalBottom = mTopInset + mUpButton.getHeight();
-        mUpButton.setTranslationY(Math.min(mSelectedItemUpButtonFloor - upButtonNormalBottom, 0));
-    }
-
     @Override
     public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
         return ArticleLoader.newAllArticlesInstance(this);
@@ -178,7 +149,6 @@ public class ArticleDetailActivity extends AppCompatActivity implements
     public void onLoadFinished(Loader<Cursor> cursorLoader, Cursor cursor) {
         mCursor = cursor;
 
-        //mPager.setAdapter(mPagerAdapter);
         mPagerAdapter.notifyDataSetChanged();
 
         // Select the start ID
@@ -215,7 +185,6 @@ public class ArticleDetailActivity extends AppCompatActivity implements
             ArticleDetailFragment fragment = (ArticleDetailFragment) object;
             if (fragment != null) {
                 mSelectedItemUpButtonFloor = fragment.getUpButtonFloor();
-                updateUpButtonPosition();
             }
         }
 

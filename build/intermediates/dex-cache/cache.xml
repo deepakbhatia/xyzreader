@@ -88,7 +88,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="d3ac3798a0736ba7928e787a16cf10af3908e8e4">
+        sha1="b085b4a77f2c0bf8ff175a1241954d670f382d56">
         <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3fb95f47c889f3c1492d9dce7eff2c3c1b72d36e/classes.dex" />
     </item>
     <item
@@ -250,7 +250,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="04b35c30af671461c8d865bfa7f26c6222a94068">
+        sha1="eb313c05b1fbdf440b2aa589530b1d599cb38867">
         <dex dex="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f367489c074b312bf8d98e159bd5552f140a05ea/classes.dex" />
     </item>
     <item
