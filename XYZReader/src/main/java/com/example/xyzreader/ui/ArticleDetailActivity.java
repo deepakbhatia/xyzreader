@@ -11,7 +11,6 @@ import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
@@ -90,8 +89,10 @@ public class ArticleDetailActivity extends AppCompatActivity implements
             mUpButtonContainer.setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() {
                 @Override
                 public WindowInsets onApplyWindowInsets(View view, WindowInsets windowInsets) {
-                    view.onApplyWindowInsets(windowInsets);
-                    mTopInset = windowInsets.getSystemWindowInsetTop();
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                        view.onApplyWindowInsets(windowInsets);
+                        mTopInset = windowInsets.getSystemWindowInsetTop();
+                    }
                     mUpButtonContainer.setTranslationY(mTopInset);
                     updateUpButtonPosition();
                     return windowInsets;
@@ -183,7 +184,6 @@ public class ArticleDetailActivity extends AppCompatActivity implements
         // Select the start ID
         if (mStartId > 0) {
             mCursor.moveToFirst();
-            // TODO: optimize
             while (!mCursor.isAfterLast()) {
                 if (mCursor.getLong(ArticleLoader.Query._ID) == mStartId) {
                     final int position = mCursor.getPosition();

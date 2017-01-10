@@ -32,7 +32,8 @@
         <TextView
             android:id="@+id/article_subtitle"
             style="@style/BodyTextStyle"
-            android:maxLines="1"
+            android:textSize="@dimen/byLineTextSize"
+            android:maxLines="2"
             android:ellipsize="end"
             tool:text="Test the Title"/>
     </LinearLayout>

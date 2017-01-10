@@ -106,8 +106,6 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHold
             int adapterPosition = getAdapterPosition();
             mCursor.moveToPosition(adapterPosition);
 
-
-            //TODO
             clickHandler.onClick(adapterPosition,mCursor.getLong(ArticleLoader.Query._ID));
 
         }
