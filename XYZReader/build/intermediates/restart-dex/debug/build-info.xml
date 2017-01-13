@@ -5,30 +5,30 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="160069122059348"
+    timestamp="167931833226820"
     token="-4276025941715090712"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="MANIFEST_FILE_CHANGE" >
 
     <task
         name="javac"
-        duration="2803" />
+        duration="6529" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="748" />
+        duration="315" />
     <task
         name="verifier"
-        duration="55" />
+        duration="5" />
 
     <artifact
         location="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="160069122059348"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="167931833226820"
+        verifier="MANIFEST_FILE_CHANGE" >
         <artifact
             location="/Users/obelix/Documents/udacity_code/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
             type="MAIN" />

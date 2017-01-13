@@ -14,8 +14,8 @@ int anim design_fab_in 0x7f05000c
 int anim design_fab_out 0x7f05000d
 int anim design_snackbar_in 0x7f05000e
 int anim design_snackbar_out 0x7f05000f
-int anim fab_state_list_anim 0x7f050010
 int animator design_appbar_state_list_animator 0x7f060000
+int animator fab_state_list_anim 0x7f060001
 int attr actionBarDivider 0x7f010046
 int attr actionBarItemBackground 0x7f010047
 int attr actionBarPopupTheme 0x7f010040

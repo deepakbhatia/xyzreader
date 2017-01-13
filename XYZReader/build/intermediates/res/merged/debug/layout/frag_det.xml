@@ -104,9 +104,10 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/share_fab"
-        android:stateListAnimator="@anim/fab_state_list_anim"
+        android:stateListAnimator="@animator/fab_state_list_anim"
         android:layout_gravity="bottom|end"
         android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="@dimen/fab_margin"
         app:fabSize="normal"
         android:src="@drawable/ic_share"
